@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Solidi.Solido">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAIAAABAAAA=</HashCode>
+      <FileName>Solido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solidi.Sfera">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAIAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Sfera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solidi.Cubo">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>Cubo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solidi.Cilindro">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAEAIAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Cilindro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solidi.Tetraedro">
+    <Position X="9.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Tetraedro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solidi.Cono">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Cono.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solidi.Materiale">
+    <Position X="12.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAAAAAAAAAAAAIAAIAgAAAAAAAAA=</HashCode>
+      <FileName>Materiale.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Solido" />
+      <Property Name="TipoMateriale" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Solidi.Program">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Solidi.TipoMateriale">
+    <Position X="15.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABgAAAAAAAAgAAAAAQBAAAAAAAA=</HashCode>
+      <FileName>TipoMateriale.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

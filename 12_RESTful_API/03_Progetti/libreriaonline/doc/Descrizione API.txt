@@ -1,0 +1,21 @@
+GET /api/v1/libri                                        -> restituisce l'intero catalogo
+GET /api/v1/libri/:id                                    -> restituisce il dettaglio del libro specificato
+GET /api/v1/libri/search?titolo=:titolo                  -> filtra i libri per titolo
+
+POST /api/v1/libri                                       -> aggiunge un libro al catalogo
+PUT /api/v1/libri/:id                                    -> modifica un libro già presente
+DELETE /api/v1/libri/:id                                 -> elimina un libro dal catalogo
+
+
+GET /api/v1/clienti                                      -> restituisce l'elenco di tutti i clienti
+GET /api/v1/clienti/:id                                  -> restituisce il dettaglio del cliente specificato
+
+
+POST /api/v1/clienti                                     -> aggiunge un nuovo cliente
+PUT /api/v1/clienti/:id                                  -> modifica un cliente già presente
+DELETE /api/v1/clienti/:id                               -> elimina un cliente dal sistema
+
+TODO:
+GET /api/v1/clienti/:idCliente/ordini                    -> recupera gli ordini di un cliente
+GET /api/v1/clienti/:idCliente/ordini/:idOrdine          -> recupera il singolo ordine di un cliente
+

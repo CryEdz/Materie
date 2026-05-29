@@ -1,0 +1,12 @@
+{
+    "cSpell.language": "en,it",
+    "azureFunctions.deploySubpath": "14_Cloud_Azure\\02_Esercizi",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectLanguageModel": 2,
+    "appService.defaultWebAppToDeploy": "/subscriptions/43f99282-20f2-413a-8a15-261a1786291b/resourceGroups/its/providers/Microsoft.Web/sites/helloworld",
+    "appService.deploySubpath": "14_Cloud_Azure\\02_Esercizi"
+}

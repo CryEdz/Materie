@@ -1,0 +1,24 @@
+---
+library:
+  name: ciaociao
+  street: via roma
+  street number: 1
+  section:
+    - name: fantasy
+      sections arguments: -stories
+        -comics
+      books:
+        - name: "Harry Potter and the Sorcerer's Stone"
+          author: J.K. Rowling
+          publication date: 1997-06-26
+          cover image: !!binary |
+            w7/DmMO/w6EudEV4aWYAAE1NACoAAAAIAAwBAAADAAAAAQPDqAAAAQEAAwAAAAEFw5wAAAECAAMAAAADAAAAwp4BBgADAAAAAQ==
+          excerpt: |
+            Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and attends Hogwarts
+        - name: "The Hobbit"
+          author: J.R.R. Tolkien
+          publication date: 1937-09-21
+          cover image: !!binary |
+            w7/DmMO/w6EudEV4aWYAAE1NACoAAAAIAAwBAAADAAAAAQPDqAAAAQEAAwAAAAEFw5wAAAECAAMAAAADAAAAwp4BBgADAAAAAQ==
+          excerpt: >
+            Bilbo Baggins, a hobbit, is recruited by the wizard Gandalf to join a group of dwarves on a quest to reclaim their mountain home from the dragon Smaug.

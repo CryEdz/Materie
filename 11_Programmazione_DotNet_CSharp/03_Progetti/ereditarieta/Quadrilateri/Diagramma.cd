@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Quadrilateri.Quadrilatero">
+    <Position X="1.25" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAAAAAIAAAAAAgEAAAAAAAAAQAAA=</HashCode>
+      <FileName>Quadrilatero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quadrilateri.Program">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quadrilateri.Quadrato">
+    <Position X="2" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Quadrato.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quadrilateri.Rettangolo">
+    <Position X="1.5" Y="3.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Rettangolo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
