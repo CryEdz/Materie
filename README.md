@@ -39,3 +39,20 @@ Ogni materia contiene:
 ## Estensioni VS Code
 
 Le estensioni consigliate sono definite in `.vscode/extensions.json` e sono state installate automaticamente in questa sessione.
+
+## Agent prompts
+
+Per usare i subagents e i template prompt trovi due file utili:
+
+- [AGENTS.md](AGENTS.md) — mappatura agenti per directory.
+- [AGENTS_PROMPTS.md](AGENTS_PROMPTS.md) — template prompt pronti all'uso.
+
+Uso rapido dal terminale
+
+- PowerShell (esegue la ricerca dalla cartella corrente e copia il template negli appunti):
+
+```powershell
+.\tools\export-nearest-template.ps1
+```
+
+- Task VS Code: esegui il task `export nearest template for chat` per esportare il `TEMPLATE_PROMPT.md` più vicino in `.chat/CURRENT_TEMPLATE.md`.

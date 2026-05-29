@@ -29,5 +29,15 @@
 				"cwd": "${workspaceFolder}/14_Cloud_Azure\\02_Esercizi"
 			}
 		}
+		,
+		{
+			"label": "export nearest template for chat",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}\\tools\\export-nearest-template.ps1\" \"${fileDirname}\"",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "silent"
+			}
+		}
 	]
 }

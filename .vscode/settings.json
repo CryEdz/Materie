@@ -8,5 +8,12 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectLanguageModel": 2,
     "appService.defaultWebAppToDeploy": "/subscriptions/43f99282-20f2-413a-8a15-261a1786291b/resourceGroups/its/providers/Microsoft.Web/sites/helloworld",
-    "appService.deploySubpath": "14_Cloud_Azure\\02_Esercizi"
+    "appService.deploySubpath": "14_Cloud_Azure\\02_Esercizi",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.venv": true,
+        "**/__pycache__": true
+    }
 }
