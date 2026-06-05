@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: nginx
 spec:
-  replicas: 2
+  replicas: 10
   # The selector defines how we know which pods belong 
   # to this Replication Controller.
   selector:

@@ -1,0 +1,50 @@
+# Comandi principali `kubectl` (sintassi e breve descrizione)
+
+# Informazioni e versione
+kubectl cluster-info                     # Mostra informazioni sul cluster
+kubectl version                          # Mostra versione client/server
+
+# Controllo risorse
+kubectl get nodes                        # Lista nodi
+kubectl get namespaces                   # Lista namespace
+kubectl get pods                          # Lista pod (usa -o wide per più dettagli)
+kubectl get deployments                  # Lista deployment
+kubectl get rs                           # Lista ReplicaSet
+kubectl get svc                          # Lista Service
+kubectl get pvc                          # Lista PersistentVolumeClaim
+kubectl get pv                           # Lista PersistentVolume
+kubectl get configmap                    # Lista ConfigMap
+kubectl get secret                       # Lista Secret
+
+# Visualizzare e descrivere
+kubectl describe pod <pod-name>          # Descrive un pod (eventi, stato, condizioni)
+kubectl logs <pod> [-c <container>]      # Mostra log di un pod/container
+kubectl logs -f <pod>                    # Segui i log (follow)
+kubectl top pod/node                     # Mostra uso risorse (CPU/MEM)
+
+# Creazione, aggiornamento e cancellazione
+kubectl apply -f <file.yaml>             # Crea o aggiorna risorse da file
+kubectl delete -f <file.yaml>            # Elimina risorse definite nel file
+kubectl create -f <file.yaml>            # Crea risorse (alternativa ad apply)
+kubectl replace -f <file.yaml>           # Sostituisce una risorsa esistente
+kubectl patch <resource> <name> -p '<json>'  # Applica patch parziale
+
+# Rollout e scaling
+kubectl rollout status deployment/<name> # Stato del rollout
+kubectl rollout history deployment/<name># Cronologia dei rollout
+kubectl rollout undo deployment/<name>   # Annulla l'ultimo rollout
+kubectl scale deployment/<name> --replicas=3  # Scala il deployment
+
+# Accesso e debugging
+kubectl port-forward svc/<service> 8080:80  # Forward porta locale -> service/pod
+kubectl exec -it <pod> -- /bin/sh         # Apri shell in un container (bash/sh)
+kubectl cp <pod>:/path/file ./localfile    # Copia file da/verso pod
+kubectl proxy                              # Avvia proxy API server locale
+
+# Altro
+kubectl config get-contexts               # Mostra contesti configurati
+kubectl config use-context <context>      # Imposta il contesto corrente
+kubectl get events                        # Elenca eventi recenti
+kubectl explain <resource>                # Mostra schema e campi di una risorsa
+kubectl auth can-i <verb> <resource>      # Controlla permessi RBAC
+
