@@ -1,6 +1,6 @@
 import express from 'express';
 import { db } from "../server.js";
-import { SELECT_ALL, SELECT_BY_ID, SELECT_BY_TITOLO, INSERT_LIBRO,
+import { SELECT_ALL, SELECT_BY_ID, SELECT_BY_TITOLO, SELECT_BY_AUTORE, INSERT_LIBRO,
     UPDATE_LIBRO, DELETE_LIBRO
 } from "../database/script_libri.js";
 
@@ -41,7 +41,7 @@ libriRouter.get("/search", (req, res) => {
     }
     ;
     if (autore) {
-        db.all(SELECT_BY_TITOLO, [autore], function (err, rows) {
+        db.all(SELECT_BY_AUTORE, [autore], function (err, rows) {
             if (err) {
                 res.status(500).json({ error: err.message });
                 return;
