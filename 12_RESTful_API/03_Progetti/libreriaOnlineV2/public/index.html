@@ -233,6 +233,7 @@
         ══════════════════════════════════════════════════════════════ */
         async function loadLibri() {
             document.getElementById('searchTitolo').value = '';
+            document.getElementById('searchAutore').value = '';
             try {
                 const res = await fetch(`${API}/libri`);
                 const data = await res.json();
@@ -247,8 +248,11 @@
             const autore = document.getElementById('searchAutore').value.trim();
 
             if (!titolo && !autore) { loadLibri(); return; }
+            const params = new URLSearchParams();
+            if (titolo) params.append('titolo', titolo);
+            if (autore) params.append('autore', autore);
             try {
-                const res = await fetch(`${API}/libri/search?titolo=${encodeURIComponent(titolo)}&autore=${encodeURIComponent(autore)}`);
+                const res = await fetch(`${API}/libri/search?${params}`);
                 const data = await res.json();
                 renderLibri(data);
             } catch {
