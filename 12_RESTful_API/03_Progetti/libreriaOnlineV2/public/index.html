@@ -472,8 +472,11 @@
         loadLibri();
         loadClienti();
 
-        // Allow pressing Enter in the search field
+        // Allow pressing Enter in the search fields
         document.getElementById('searchTitolo').addEventListener('keydown', e => {
+            if (e.key === 'Enter') searchLibri();
+        });
+        document.getElementById('searchAutore').addEventListener('keydown', e => {
             if (e.key === 'Enter') searchLibri();
         });
     </script>

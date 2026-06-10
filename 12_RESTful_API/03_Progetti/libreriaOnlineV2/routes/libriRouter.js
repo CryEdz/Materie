@@ -1,7 +1,8 @@
 import express from 'express';
 import { db } from "../server.js";
 import { SELECT_ALL, SELECT_BY_ID, SELECT_BY_TITOLO, INSERT_LIBRO,
-    UPDATE_LIBRO, DELETE_LIBRO } from "../database/script_libri.js";
+    UPDATE_LIBRO, DELETE_LIBRO, SELECT_BY_AUTORE
+} from "../database/script_libri.js";
 
 
 const libriRouter = express.Router();
@@ -20,21 +21,30 @@ libriRouter.get("/", (req, res) => {
 
 libriRouter.get("/search", (req, res) => {
     const titolo = req.query.titolo;
-    console.log(`GET /api/v2/libri?titolo="${titolo}"`);
+    const autore = req.query.autore;
+    console.log(`GET /api/v2/libri/search?titolo="${titolo}"&autore="${autore}"`);
 
-    if (!titolo) {
-        res.status(400).json({ error: "Titolo non valido" });
-        return;
+    if (!titolo && !autore) {
+        return res.status(400).json({ error: "Specificare almeno un criterio di ricerca (titolo o autore)" });
     }
 
-    db.all(SELECT_BY_TITOLO, [titolo], function(err, rows){
-        if (err) {
-            res.status(500).json({ error: err.message });   
-            return;
-        } else {
+    if (titolo && autore) {
+        const sql = "SELECT * FROM libri WHERE LOWER(titolo) LIKE '%' || LOWER(?) || '%' AND LOWER(autore) LIKE '%' || LOWER(?) || '%'";
+        db.all(sql, [titolo, autore], function (err, rows) {
+            if (err) return res.status(500).json({ error: err.message });
             res.json(rows);
-        }
-    });
+        });
+    } else if (titolo) {
+        db.all(SELECT_BY_TITOLO, [titolo], function (err, rows) {
+            if (err) return res.status(500).json({ error: err.message });
+            res.json(rows);
+        });
+    } else {
+        db.all(SELECT_BY_AUTORE, [autore], function (err, rows) {
+            if (err) return res.status(500).json({ error: err.message });
+            res.json(rows);
+        });
+    }
 });
 
 libriRouter.get("/:id", (req, res) => {
