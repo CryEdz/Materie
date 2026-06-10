@@ -7,9 +7,11 @@ import libriRouter from './routes/libriRouter.js';
 import clientiRouter from './routes/clientiRouter.js';
 import swaggerUi from 'swagger-ui-express';
 import swaggerConf from './swagger/swagger.json' with { type: 'json' };
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
+app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/v2/libri", libriRouter);
 app.use("/api/v2/clienti", clientiRouter);

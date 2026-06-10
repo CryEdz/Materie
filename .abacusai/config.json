@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"11_Programmazione_DotNet_CSharp/02_Esercizi/GestioneMessaggi\" && dotnet build 2>&1 | tail -25)",
+      "Bash(cd 11_Programmazione_DotNet_CSharp/02_Esercizi/GestioneMessaggi && dotnet build 2>&1 | tail -25)",
+      "Bash(cd 02_Esercizi/GestioneMessaggi && dotnet build 2>&1 | tail -25)",
+      "Bash(dotnet build \"11_Programmazione_DotNet_CSharp/02_Esercizi/GestioneMessaggi/GestioneMessaggi/GestioneMessaggi.csproj\" 2>&…)",
+      "Bash(dotnet build \"11_Programmazione_DotNet_CSharp\\02_Esercizi\\GestioneMessaggi\\GestioneMessaggi\\GestioneMessaggi.csproj\" 2>&…)",
+      "Bash(dotnet build \"C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Ese…)",
+      "Bash(cd \"11_Programmazione_DotNet_CSharp\\02_Esercizi\\GestioneMessaggi\\GestioneMessaggi\" && pwd && dotnet build 2>&1 | tail -2…)",
+      "Bash(dotnet build \"11_Programmazione_DotNet_CSharp/02_Esercizi/GestioneMessaggi12/GestioneMessaggi/GestioneMessaggi.csproj\" 2…)",
+      "Bash(dotnet build \"11_Programmazione_DotNet_CSharp/02_Esercizi/GestioneMessaggi12/GestioneMessaggi/GestioneMessaggi.csproj\" 2…)"
+    ]
+  }
+}

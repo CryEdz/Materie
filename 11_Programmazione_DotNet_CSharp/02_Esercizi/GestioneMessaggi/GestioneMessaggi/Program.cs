@@ -81,7 +81,7 @@
                 switch (scelta)
                 {
                     case 0: Console.WriteLine("Programma terminato"); break;
-                    case 1: biz.Inserisci(MessaggiBiz.NuovoMessaggioDaInput()); Console.WriteLine("Messaggio inserito."); break;
+                    case 1: biz.Inserisci(biz.NuovoMessaggioDaInput()); Console.WriteLine("Messaggio inserito."); break;
                     case 2:
                         Console.Write("Mittente da cercare: ");
                         Console.WriteLine(string.Join('\n', biz.CercaPerMittente(Console.ReadLine()!)));
