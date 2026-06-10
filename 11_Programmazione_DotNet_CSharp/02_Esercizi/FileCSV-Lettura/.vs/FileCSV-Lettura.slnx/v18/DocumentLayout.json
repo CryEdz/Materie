@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\filecsv-lettura\\filecsv-lettura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|solutionrelative:filecsv-lettura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\filecsv-lettura\\filecsv-lettura\\file\\persone.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|solutionrelative:filecsv-lettura\\file\\persone.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\filecsv-lettura\\filecsv-lettura\\tiposesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|solutionrelative:filecsv-lettura\\tiposesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\filecsv-lettura\\filecsv-lettura\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6419FE2-F82F-5339-F428-BB6C6CDB9DF2}|FileCSV-Lettura\\FileCSV-Lettura.csproj|solutionrelative:filecsv-lettura\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Persone.csv",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\File\\Persone.csv",
+              "RelativeDocumentMoniker": "FileCSV-Lettura\\File\\Persone.csv",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\File\\Persone.csv",
+              "RelativeToolTip": "FileCSV-Lettura\\File\\Persone.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-06-10T08:35:34.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TipoSesso.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\TipoSesso.cs",
+              "RelativeDocumentMoniker": "FileCSV-Lettura\\TipoSesso.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\TipoSesso.cs",
+              "RelativeToolTip": "FileCSV-Lettura\\TipoSesso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T08:10:19.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\Persona.cs",
+              "RelativeDocumentMoniker": "FileCSV-Lettura\\Persona.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\Persona.cs",
+              "RelativeToolTip": "FileCSV-Lettura\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T08:10:11.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\Program.cs",
+              "RelativeDocumentMoniker": "FileCSV-Lettura\\Program.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileCSV-Lettura\\FileCSV-Lettura\\Program.cs",
+              "RelativeToolTip": "FileCSV-Lettura\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T08:08:42.501Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

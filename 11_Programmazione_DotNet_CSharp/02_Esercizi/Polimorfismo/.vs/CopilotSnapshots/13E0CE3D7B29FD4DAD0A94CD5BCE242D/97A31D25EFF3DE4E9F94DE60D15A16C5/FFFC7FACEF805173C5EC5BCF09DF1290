@@ -1,0 +1,222 @@
+﻿namespace Polimorfismo
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Creazione elenco dipendenti
+            List<Dipendente> dipendenti = new List<Dipendente>();
+
+            // Aggiunta amministrativi
+            dipendenti.Add(new Amministrativo("Rossi", "Marco", 20, 160, Mansione.Contabile));
+            dipendenti.Add(new Amministrativo("Bianchi", "Laura", 18, 160, Mansione.RisoreUmane));
+            dipendenti.Add(new Amministrativo("Verdi", "Paolo", 25, 160, Mansione.Direttore));
+
+            // Aggiunta operai
+            dipendenti.Add(new Operaio("Ferrari", "Antonio", 15, 160, TipoOperaio.Installatore));
+            dipendenti.Add(new Operaio("Russo", "Giovanni", 14, 160, TipoOperaio.Manutentore));
+            dipendenti.Add(new Operaio("Gallo", "Francesca", 16, 170, TipoOperaio.Installatore));
+            dipendenti.Add(new Operaio("Conti", "Michele", 15, 160, TipoOperaio.Manutentore));
+
+            // Aggiunta operai specializzati
+            OperaioSpecializzato operarioSpec1 = new OperaioSpecializzato("Barbieri", "Carlo", 17, 160, TipoOperaio.Installatore);
+            operarioSpec1.AggiungiMissione(new Missione("Piattaforma Nord", 500));
+            operarioSpec1.AggiungiMissione(new Missione("Piattaforma Sud", 400));
+            dipendenti.Add(operarioSpec1);
+
+            OperaioSpecializzato operarioSpec2 = new OperaioSpecializzato("Martini", "Roberto", 18, 160, TipoOperaio.Manutentore);
+            operarioSpec2.AggiungiMissione(new Missione("Riparazione Piattaforma Est", 600));
+            dipendenti.Add(operarioSpec2);
+
+            OperaioSpecializzato operarioSpec3 = new OperaioSpecializzato("Colombo", "Alessandra", 16, 170, TipoOperaio.Installatore);
+            operarioSpec3.AggiungiMissione(new Missione("Piattaforma Ovest", 550));
+            dipendenti.Add(operarioSpec3);
+
+            // Menu principale
+            bool continua = true;
+            while (continua)
+            {
+                MostraMenu();
+                string? scelta = Console.ReadLine();
+
+                switch (scelta)
+                {
+                    case "1":
+                        VisualizzaTuttiDipendenti(dipendenti);
+                        break;
+                    case "2":
+                        VisualizzaAmministrativi(dipendenti);
+                        break;
+                    case "3":
+                        VisualizzaOperai(dipendenti);
+                        break;
+                    case "4":
+                        VisualizzaOperaiSpecializzati(dipendenti);
+                        break;
+                    case "5":
+                        VisualizzaOperaiStipendioAlto(dipendenti);
+                        break;
+                    case "6":
+                        VisualizzaOperaiManutentori(dipendenti);
+                        break;
+                    case "7":
+                        VisualizzaSchedaDirettore(dipendenti);
+                        break;
+                    case "8":
+                        VisualizzaTotaleStipendi(dipendenti);
+                        break;
+                    case "9":
+                        continua = false;
+                        Console.WriteLine("Arrivederci!");
+                        break;
+                    default:
+                        Console.WriteLine("Scelta non valida. Riprova.");
+                        break;
+                }
+
+                if (continua)
+                {
+                    Console.WriteLine("Premi un tasto per continuare...");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+            }
+        }
+
+        static void MostraMenu()
+        {
+            Console.WriteLine("=== MENU GESTIONE DIPENDENTI ===");
+            Console.WriteLine("1. Visualizzare l'elenco dei dipendenti con tutti i loro dati");
+            Console.WriteLine("2. Visualizzare l'elenco degli amministrativi");
+            Console.WriteLine("3. Visualizzare l'elenco degli operai");
+            Console.WriteLine("4. Visualizzare l'elenco degli operai specializzati");
+            Console.WriteLine("5. Visualizzare l'elenco degli operai che hanno stipendio superiore a 2000,00 euro");
+            Console.WriteLine("6. Visualizzare l'elenco degli operai manutentori");
+            Console.WriteLine("7. Visualizzare la scheda in dettaglio del direttore amministrativo");
+            Console.WriteLine("8. Visualizzare il totale degli stipendi da pagare");
+            Console.WriteLine("9. Uscire dal programma");
+            Console.Write("Scegli un'opzione: ");
+        }
+
+        static void VisualizzaTuttiDipendenti(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== ELENCO TUTTI DIPENDENTI ===\n");
+            foreach (var dipendente in dipendenti)
+            {
+                dipendente.Visualizza();
+            }
+        }
+
+        static void VisualizzaAmministrativi(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== ELENCO AMMINISTRATIVI ===\n");
+            var amministrativi = dipendenti.OfType<Amministrativo>().Where(a => !(a is OperaioSpecializzato)).ToList();
+            if (amministrativi.Count == 0)
+            {
+                Console.WriteLine("Nessun amministrativo trovato.");
+                return;
+            }
+            foreach (var admin in amministrativi)
+            {
+                admin.Visualizza();
+            }
+        }
+
+        static void VisualizzaOperai(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== ELENCO OPERAI ===\n");
+            var operai = dipendenti.OfType<Operaio>().ToList();
+            if (operai.Count == 0)
+            {
+                Console.WriteLine("Nessun operaio trovato.");
+                return;
+            }
+            foreach (var operaio in operai)
+            {
+                operaio.Visualizza();
+            }
+        }
+
+        static void VisualizzaOperaiSpecializzati(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== ELENCO OPERAI SPECIALIZZATI ===\n");
+            var operaiSpec = dipendenti.OfType<OperaioSpecializzato>().ToList();
+            if (operaiSpec.Count == 0)
+            {
+                Console.WriteLine("Nessun operaio specializzato trovato.");
+                return;
+            }
+            foreach (var operaio in operaiSpec)
+            {
+                operaio.Visualizza();
+            }
+        }
+
+        static void VisualizzaOperaiStipendioAlto(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== OPERAI CON STIPENDIO > 2000,00 EUR0 ===\n");
+            var operaiAlto = dipendenti.OfType<Operaio>()
+                                       .Where(o => o.CalcolaStipendio() > 2000)
+                                       .ToList();
+            if (operaiAlto.Count == 0)
+            {
+                Console.WriteLine("Nessun operaio con stipendio superiore a 2000,00 euro.");
+                return;
+            }
+            foreach (var operaio in operaiAlto)
+            {
+                operaio.Visualizza();
+            }
+        }
+
+        static void VisualizzaOperaiManutentori(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== ELENCO OPERAI MANUTENTORI ===\n");
+            var manutentori = dipendenti.OfType<Operaio>()
+                                        .Where(o => o.Tipo == TipoOperaio.Manutentore)
+                                        .ToList();
+            if (manutentori.Count == 0)
+            {
+                Console.WriteLine("Nessun operaio manutentore trovato.");
+                return;
+            }
+            foreach (var manutentore in manutentori)
+            {
+                manutentore.Visualizza();
+            }
+        }
+
+        static void VisualizzaSchedaDirettore(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== SCHEDA DIRETTORE AMMINISTRATIVO ===\n");
+            var direttore = dipendenti.OfType<Amministrativo>()
+                                     .FirstOrDefault(a => a.Mansione == Mansione.Direttore);
+            if (direttore == null)
+            {
+                Console.WriteLine("Nessun direttore trovato.");
+                return;
+            }
+            direttore.Visualizza();
+        }
+
+        static void VisualizzaTotaleStipendi(List<Dipendente> dipendenti)
+        {
+            Console.Clear();
+            Console.WriteLine("=== TOTALE STIPENDI DA PAGARE ===\n");
+            decimal totale = 0;
+            foreach (var dipendente in dipendenti)
+            {
+                totale += dipendente.CalcolaStipendio();
+            }
+            Console.WriteLine($"Totale stipendi: {totale:C}");
+            Console.WriteLine();
+        }
+    }
+}

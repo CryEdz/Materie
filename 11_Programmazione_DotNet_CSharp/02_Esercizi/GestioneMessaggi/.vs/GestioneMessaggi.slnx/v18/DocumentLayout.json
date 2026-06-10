@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\GestioneMessaggi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D978D25E-8344-EED4-7735-8FD2C3D1B135}|GestioneMessaggi\\GestioneMessaggi.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\materie\\11_programmazione_dotnet_csharp\\02_esercizi\\gestionemessaggi\\gestionemessaggi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D978D25E-8344-EED4-7735-8FD2C3D1B135}|GestioneMessaggi\\GestioneMessaggi.csproj|solutionrelative:gestionemessaggi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\GestioneMessaggi\\GestioneMessaggi\\Program.cs",
+              "RelativeDocumentMoniker": "GestioneMessaggi\\Program.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\GestioneMessaggi\\GestioneMessaggi\\Program.cs",
+              "RelativeToolTip": "GestioneMessaggi\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwFMAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T09:51:17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

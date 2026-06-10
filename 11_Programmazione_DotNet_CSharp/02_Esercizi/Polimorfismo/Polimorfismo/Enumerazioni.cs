@@ -1,0 +1,23 @@
+namespace Polimorfismo
+{
+    /// <summary>
+    /// Enumerazione delle mansioni disponibili per i dipendenti amministrativi.
+    /// Ogni mansione ha un bonus aggiuntivo associato allo stipendio.
+    /// </summary>
+    internal enum Mansione
+    {
+        Contabile,      // Bonus: +150 euro
+        RisoreUmane,    // Bonus: +75 euro
+        Direttore       // Bonus: +250 euro
+    }
+
+    /// <summary>
+    /// Enumerazione dei tipi di operai disponibili.
+    /// Ogni tipo ha un bonus aggiuntivo associato allo stipendio.
+    /// </summary>
+    internal enum TipoOperaio
+    {
+        Installatore,   // Bonus: +185 euro
+        Manutentore     // Bonus: +230 euro
+    }
+}

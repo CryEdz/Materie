@@ -1,0 +1,32 @@
+﻿namespace Polimorfismo
+{
+    internal class Operaio : Dipendente
+    {
+        public TipoOperaio Tipo { get; set; }
+
+        public Operaio(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, TipoOperaio tipo)
+            : base(cognome, nome, pagaOraria, oreLavorate)
+        {
+            Tipo = tipo;
+        }
+
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendioBase = base.CalcolaStipendio();
+            return Tipo switch
+            {
+                TipoOperaio.Installatore => stipendioBase + 185,
+                TipoOperaio.Manutentore => stipendioBase + 230,
+                _ => stipendioBase
+            };
+        }
+
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Operaio");
+            Console.WriteLine($"Tipo: {Tipo}");
+            Console.WriteLine();
+        }
+    }
+}

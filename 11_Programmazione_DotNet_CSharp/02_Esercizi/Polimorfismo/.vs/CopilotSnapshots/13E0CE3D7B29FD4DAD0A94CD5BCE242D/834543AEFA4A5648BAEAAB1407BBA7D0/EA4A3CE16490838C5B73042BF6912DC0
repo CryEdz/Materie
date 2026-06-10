@@ -1,0 +1,31 @@
+﻿namespace Polimorfismo
+{
+    /// <summary>
+    /// Classe che rappresenta una missione oceanica.
+    /// Una missione è caratterizzata da un nome e da un'indennità economica
+    /// che viene aggiunta allo stipendio degli operai specializzati.
+    /// </summary>
+    internal class Missione
+    {
+        /// <summary>
+        /// Nome della missione oceanica
+        /// </summary>
+        public string Nome { get; set; }
+
+        /// <summary>
+        /// Indennità economica associata alla missione in euro
+        /// </summary>
+        public decimal Indennita { get; set; }
+
+        /// <summary>
+        /// Costruttore della classe Missione.
+        /// </summary>
+        /// <param name="nome">Nome della missione</param>
+        /// <param name="indennita">Indennità economica della missione in euro</param>
+        public Missione(string nome, decimal indennita)
+        {
+            Nome = nome;
+            Indennita = indennita;
+        }
+    }
+}

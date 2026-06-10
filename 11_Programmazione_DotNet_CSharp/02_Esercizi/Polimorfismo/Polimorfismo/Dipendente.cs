@@ -1,0 +1,71 @@
+namespace Polimorfismo
+{
+    /// <summary>
+    /// Classe astratta base che rappresenta un dipendente generico.
+    /// Contiene le proprietà comuni a tutti i tipi di dipendente e definisce
+    /// i metodi virtuali per il calcolo dello stipendio e la visualizzazione.
+    /// </summary>
+    internal abstract class Dipendente
+    {
+        /// <summary>
+        /// Cognome del dipendente
+        /// </summary>
+        public string Cognome { get; set; }
+
+        /// <summary>
+        /// Nome del dipendente
+        /// </summary>
+        public string Nome { get; set; }
+
+        /// <summary>
+        /// Paga oraria del dipendente in euro
+        /// </summary>
+        public decimal PagaOraria { get; set; }
+
+        /// <summary>
+        /// Numero di ore lavorate nel periodo di riferimento
+        /// </summary>
+        public decimal OrelavOrate { get; set; }
+
+        /// <summary>
+        /// Costruttore della classe Dipendente.
+        /// Inizializza le proprietà base del dipendente.
+        /// </summary>
+        /// <param name="cognome">Cognome del dipendente</param>
+        /// <param name="nome">Nome del dipendente</param>
+        /// <param name="pagaOraria">Paga oraria in euro</param>
+        /// <param name="oreLavorate">Numero di ore lavorate</param>
+        public Dipendente(string cognome, string nome, decimal pagaOraria, decimal oreLavorate)
+        {
+            Cognome = cognome;
+            Nome = nome;
+            PagaOraria = pagaOraria;
+            OrelavOrate = oreLavorate;
+        }
+
+        /// <summary>
+        /// Calcola lo stipendio base del dipendente.
+        /// Questo metodo può essere sovrascritto dalle classi derivate
+        /// per aggiungere bonus o indennità specifiche.
+        /// </summary>
+        /// <returns>Lo stipendio lordo calcolato come paga oraria * ore lavorate</returns>
+        public virtual decimal CalcolaStipendio()
+        {
+            return PagaOraria * OrelavOrate;
+        }
+
+        /// <summary>
+        /// Visualizza le informazioni del dipendente.
+        /// Questo metodo può essere sovrascritto dalle classi derivate
+        /// per aggiungere informazioni specifiche della categoria.
+        /// </summary>
+        public virtual void Visualizza()
+        {
+            Console.WriteLine($"Nome: {Nome} {Cognome}");
+            Console.WriteLine($"Paga oraria: {PagaOraria:C}");
+            Console.WriteLine($"Ore lavorate: {OrelavOrate}");
+            Console.WriteLine($"Stipendio: {CalcolaStipendio():C}");
+            Console.WriteLine();
+        }
+    }
+}

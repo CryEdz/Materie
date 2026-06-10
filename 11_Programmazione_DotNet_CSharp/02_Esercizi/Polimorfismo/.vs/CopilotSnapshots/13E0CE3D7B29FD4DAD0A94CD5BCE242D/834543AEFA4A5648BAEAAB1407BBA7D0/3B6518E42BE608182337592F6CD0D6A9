@@ -1,0 +1,43 @@
+﻿namespace Polimorfismo
+{
+    internal class OperaioSpecializzato : Operaio
+    {
+        public List<Missione> Missioni { get; set; }
+
+        public OperaioSpecializzato(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, TipoOperaio tipo)
+            : base(cognome, nome, pagaOraria, oreLavorate, tipo)
+        {
+            Missioni = new List<Missione>();
+        }
+
+        public void AggiungiMissione(Missione missione)
+        {
+            Missioni.Add(missione);
+        }
+
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendio = base.CalcolaStipendio();
+            foreach (var missione in Missioni)
+            {
+                stipendio += missione.Indennita;
+            }
+            return stipendio;
+        }
+
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Operaio Specializzato");
+            if (Missioni.Count > 0)
+            {
+                Console.WriteLine("Missioni:");
+                foreach (var missione in Missioni)
+                {
+                    Console.WriteLine($"  - {missione.Nome}: {missione.Indennita:C}");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+}

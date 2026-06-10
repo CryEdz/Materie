@@ -1,0 +1,169 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Polimorfismo
+{
+    // Enumerazioni
+    internal enum Mansione
+    {
+        Contabile,
+        RisoreUmane,
+        Direttore
+    }
+
+    internal enum TipoOperaio
+    {
+        Installatore,
+        Manutentore
+    }
+
+    // Classe base Dipendente
+    internal abstract class Dipendente
+    {
+        public string Cognome { get; set; }
+        public string Nome { get; set; }
+        public decimal PagaOraria { get; set; }
+        public decimal OrelavOrate { get; set; }
+
+        public Dipendente(string cognome, string nome, decimal pagaOraria, decimal oreLavorate)
+        {
+            Cognome = cognome;
+            Nome = nome;
+            PagaOraria = pagaOraria;
+            OrelavOrate = oreLavorate;
+        }
+
+        public virtual decimal CalcolaStipendio()
+        {
+            return PagaOraria * OrelavOrate;
+        }
+
+        public virtual void Visualizza()
+        {
+            Console.WriteLine($"Nome: {Nome} {Cognome}");
+            Console.WriteLine($"Paga oraria: {PagaOraria:C}");
+            Console.WriteLine($"Ore lavorate: {OrelavOrate}");
+            Console.WriteLine($"Stipendio: {CalcolaStipendio():C}");
+            Console.WriteLine();
+        }
+    }
+
+    // Classe Amministrativo
+    internal class Amministrativo : Dipendente
+    {
+        public Mansione Mansione { get; set; }
+
+        public Amministrativo(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, Mansione mansione)
+            : base(cognome, nome, pagaOraria, oreLavorate)
+        {
+            Mansione = mansione;
+        }
+
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendioBase = base.CalcolaStipendio();
+            return Mansione switch
+            {
+                Mansione.Contabile => stipendioBase + 150,
+                Mansione.RisoreUmane => stipendioBase + 75,
+                Mansione.Direttore => stipendioBase + 250,
+                _ => stipendioBase
+            };
+        }
+
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Amministrativo");
+            Console.WriteLine($"Mansione: {Mansione}");
+            Console.WriteLine();
+        }
+    }
+
+    // Classe Operaio
+    internal class Operaio : Dipendente
+    {
+        public TipoOperaio Tipo { get; set; }
+
+        public Operaio(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, TipoOperaio tipo)
+            : base(cognome, nome, pagaOraria, oreLavorate)
+        {
+            Tipo = tipo;
+        }
+
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendioBase = base.CalcolaStipendio();
+            return Tipo switch
+            {
+                TipoOperaio.Installatore => stipendioBase + 185,
+                TipoOperaio.Manutentore => stipendioBase + 230,
+                _ => stipendioBase
+            };
+        }
+
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Operaio");
+            Console.WriteLine($"Tipo: {Tipo}");
+            Console.WriteLine();
+        }
+    }
+
+    // Classe Missione
+    internal class Missione
+    {
+        public string Nome { get; set; }
+        public decimal Indennita { get; set; }
+
+        public Missione(string nome, decimal indennita)
+        {
+            Nome = nome;
+            Indennita = indennita;
+        }
+    }
+
+    // Classe OperaioSpecializzato
+    internal class OperaioSpecializzato : Operaio
+    {
+        public List<Missione> Missioni { get; set; }
+
+        public OperaioSpecializzato(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, TipoOperaio tipo)
+            : base(cognome, nome, pagaOraria, oreLavorate, tipo)
+        {
+            Missioni = new List<Missione>();
+        }
+
+        public void AggiungiMissione(Missione missione)
+        {
+            Missioni.Add(missione);
+        }
+
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendio = base.CalcolaStipendio();
+            foreach (var missione in Missioni)
+            {
+                stipendio += missione.Indennita;
+            }
+            return stipendio;
+        }
+
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Operaio Specializzato");
+            if (Missioni.Count > 0)
+            {
+                Console.WriteLine("Missioni:");
+                foreach (var missione in Missioni)
+                {
+                    Console.WriteLine($"  - {missione.Nome}: {missione.Indennita:C}");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+}

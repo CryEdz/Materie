@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\calciatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\calciatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\inuotatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\inuotatore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\iatletauniversale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\iatletauniversale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\itennista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\itennista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\interfaccia\\atleti\\iatleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628F0974-616A-4B6C-8239-D441AE7A7C14}|Atleti\\Atleti.csproj|solutionrelative:atleti\\iatleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calciatore.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\Calciatore.cs",
+              "RelativeDocumentMoniker": "Atleti\\Calciatore.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\Calciatore.cs",
+              "RelativeToolTip": "Atleti\\Calciatore.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowCkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T08:19:35.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAtletaUniversale.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\IAtletaUniversale.cs",
+              "RelativeDocumentMoniker": "Atleti\\IAtletaUniversale.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\IAtletaUniversale.cs",
+              "RelativeToolTip": "Atleti\\IAtletaUniversale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T08:13:41.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITennista.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\ITennista.cs",
+              "RelativeDocumentMoniker": "Atleti\\ITennista.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\ITennista.cs",
+              "RelativeToolTip": "Atleti\\ITennista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T08:07:35.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAtleta.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\IAtleta.cs",
+              "RelativeDocumentMoniker": "Atleti\\IAtleta.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\IAtleta.cs",
+              "RelativeToolTip": "Atleti\\IAtleta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T07:59:38.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Atleta.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\Atleta.cs",
+              "RelativeDocumentMoniker": "Atleti\\Atleta.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\Atleta.cs",
+              "RelativeToolTip": "Atleti\\Atleta.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T07:47:19.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\Program.cs",
+              "RelativeDocumentMoniker": "Atleti\\Program.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\Program.cs",
+              "RelativeToolTip": "Atleti\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T07:46:16.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "INuotatore.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\INuotatore.cs",
+              "RelativeDocumentMoniker": "Atleti\\INuotatore.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Interfaccia\\Atleti\\INuotatore.cs",
+              "RelativeToolTip": "Atleti\\INuotatore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T08:07:47.708Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

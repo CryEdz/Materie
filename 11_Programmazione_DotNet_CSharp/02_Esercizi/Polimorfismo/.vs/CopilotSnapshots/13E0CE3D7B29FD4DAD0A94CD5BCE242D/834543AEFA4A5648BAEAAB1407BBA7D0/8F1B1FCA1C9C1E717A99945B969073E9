@@ -1,0 +1,33 @@
+﻿namespace Polimorfismo
+{
+    internal class Amministrativo : Dipendente
+    {
+        public Mansione Mansione { get; set; }
+
+        public Amministrativo(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, Mansione mansione)
+            : base(cognome, nome, pagaOraria, oreLavorate)
+        {
+            Mansione = mansione;
+        }
+
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendioBase = base.CalcolaStipendio();
+            return Mansione switch
+            {
+                Mansione.Contabile => stipendioBase + 150,
+                Mansione.RisoreUmane => stipendioBase + 75,
+                Mansione.Direttore => stipendioBase + 250,
+                _ => stipendioBase
+            };
+        }
+
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Amministrativo");
+            Console.WriteLine($"Mansione: {Mansione}");
+            Console.WriteLine();
+        }
+    }
+}

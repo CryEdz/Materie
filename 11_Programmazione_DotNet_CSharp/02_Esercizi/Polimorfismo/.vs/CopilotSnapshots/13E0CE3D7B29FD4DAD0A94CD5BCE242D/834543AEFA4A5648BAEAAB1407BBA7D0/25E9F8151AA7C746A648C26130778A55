@@ -1,0 +1,14 @@
+﻿namespace Polimorfismo
+{
+    internal class Missione
+    {
+        public string Nome { get; set; }
+        public decimal Indennita { get; set; }
+
+        public Missione(string nome, decimal indennita)
+        {
+            Nome = nome;
+            Indennita = indennita;
+        }
+    }
+}

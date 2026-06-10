@@ -1,0 +1,15 @@
+﻿namespace Polimorfismo
+{
+    internal enum Mansione
+    {
+        Contabile,
+        RisoreUmane,
+        Direttore
+    }
+
+    internal enum TipoOperaio
+    {
+        Installatore,
+        Manutentore
+    }
+}

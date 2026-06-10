@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\",
+  "WorkspaceRootPath": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7847B72E-30A2-4005-83CB-CD8FDA6EB20D}|Esercizio-MazzoCarte\\Esercizio-MazzoCarte.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\esercizio-mazzocarte\\esercizio-mazzocarte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7847B72E-30A2-4005-83CB-CD8FDA6EB20D}|Esercizio-MazzoCarte\\Esercizio-MazzoCarte.csproj|solutionrelative:esercizio-mazzocarte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Esercizio-MazzoCarte\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edoardo.querio\\.copilot\\plans\\plan-implementazione-mazzo-di-carte-napoletane.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7847B72E-30A2-4005-83CB-CD8FDA6EB20D}|Esercizio-MazzoCarte\\Esercizio-MazzoCarte.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\esercizio-mazzocarte\\esercizio-mazzocarte\\mazzocarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7847B72E-30A2-4005-83CB-CD8FDA6EB20D}|Esercizio-MazzoCarte\\Esercizio-MazzoCarte.csproj|solutionrelative:esercizio-mazzocarte\\mazzocarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\MazzoCarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Esercizio-MazzoCarte\\MazzoCarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7847B72E-30A2-4005-83CB-CD8FDA6EB20D}|Esercizio-MazzoCarte\\Esercizio-MazzoCarte.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\esercizio-mazzocarte\\esercizio-mazzocarte\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7847B72E-30A2-4005-83CB-CD8FDA6EB20D}|Esercizio-MazzoCarte\\Esercizio-MazzoCarte.csproj|solutionrelative:esercizio-mazzocarte\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Esercizio-MazzoCarte\\Carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,35 +31,33 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MazzoCarte.cs",
-              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\MazzoCarte.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\MazzoCarte.cs",
               "RelativeDocumentMoniker": "Esercizio-MazzoCarte\\MazzoCarte.cs",
-              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\MazzoCarte.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\MazzoCarte.cs",
               "RelativeToolTip": "Esercizio-MazzoCarte\\MazzoCarte.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T13:58:50.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T13:58:50.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Carta.cs",
-              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Carta.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Carta.cs",
               "RelativeDocumentMoniker": "Esercizio-MazzoCarte\\Carta.cs",
-              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Carta.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Carta.cs",
               "RelativeToolTip": "Esercizio-MazzoCarte\\Carta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T13:58:43.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T13:58:43.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Program.cs",
               "RelativeDocumentMoniker": "Esercizio-MazzoCarte\\Program.cs",
-              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Program.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Materie\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\Esercizio-MazzoCarte\\Esercizio-MazzoCarte\\Program.cs",
               "RelativeToolTip": "Esercizio-MazzoCarte\\Program.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

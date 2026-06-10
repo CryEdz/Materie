@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileTesto-Scrittura\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6BF4B32-0070-4893-991C-FB22DEE294F6}|FileTesto-Scrittura\\FileTesto-Scrittura.csproj|c:\\users\\edoardo.querio\\onedrive - its ict piemonte\\desktop\\nuova cartella\\11_programmazione_dotnet_csharp\\02_esercizi\\filetesto-scrittura\\filetesto-scrittura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6BF4B32-0070-4893-991C-FB22DEE294F6}|FileTesto-Scrittura\\FileTesto-Scrittura.csproj|solutionrelative:filetesto-scrittura\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileTesto-Scrittura\\FileTesto-Scrittura\\Program.cs",
+              "RelativeDocumentMoniker": "FileTesto-Scrittura\\Program.cs",
+              "ToolTip": "C:\\Users\\edoardo.querio\\OneDrive - ITS ICT Piemonte\\Desktop\\Nuova cartella\\11_Programmazione_DotNet_CSharp\\02_Esercizi\\FileTesto-Scrittura\\FileTesto-Scrittura\\Program.cs",
+              "RelativeToolTip": "FileTesto-Scrittura\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T07:26:14.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

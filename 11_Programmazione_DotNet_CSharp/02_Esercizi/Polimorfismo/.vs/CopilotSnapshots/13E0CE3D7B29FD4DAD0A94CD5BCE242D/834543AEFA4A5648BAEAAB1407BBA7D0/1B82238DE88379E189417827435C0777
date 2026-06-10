@@ -1,0 +1,32 @@
+﻿namespace Polimorfismo
+{
+    internal abstract class Dipendente
+    {
+        public string Cognome { get; set; }
+        public string Nome { get; set; }
+        public decimal PagaOraria { get; set; }
+        public decimal OrelavOrate { get; set; }
+
+        public Dipendente(string cognome, string nome, decimal pagaOraria, decimal oreLavorate)
+        {
+            Cognome = cognome;
+            Nome = nome;
+            PagaOraria = pagaOraria;
+            OrelavOrate = oreLavorate;
+        }
+
+        public virtual decimal CalcolaStipendio()
+        {
+            return PagaOraria * OrelavOrate;
+        }
+
+        public virtual void Visualizza()
+        {
+            Console.WriteLine($"Nome: {Nome} {Cognome}");
+            Console.WriteLine($"Paga oraria: {PagaOraria:C}");
+            Console.WriteLine($"Ore lavorate: {OrelavOrate}");
+            Console.WriteLine($"Stipendio: {CalcolaStipendio():C}");
+            Console.WriteLine();
+        }
+    }
+}

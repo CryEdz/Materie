@@ -1,0 +1,57 @@
+namespace Polimorfismo
+{
+    /// <summary>
+    /// Classe che rappresenta un dipendente operaio.
+    /// Estende la classe Dipendente e aggiunge il concetto di tipo di operaio.
+    /// Lo stipendio include un bonus specifico in base al tipo di lavoro svolto.
+    /// </summary>
+    internal class Operaio : Dipendente
+    {
+        /// <summary>
+        /// Tipo di operaio (Installatore o Manutentore)
+        /// </summary>
+        public TipoOperaio Tipo { get; set; }
+
+        /// <summary>
+        /// Costruttore della classe Operaio.
+        /// </summary>
+        /// <param name="cognome">Cognome del dipendente</param>
+        /// <param name="nome">Nome del dipendente</param>
+        /// <param name="pagaOraria">Paga oraria in euro</param>
+        /// <param name="oreLavorate">Numero di ore lavorate</param>
+        /// <param name="tipo">Tipo di operaio (Installatore o Manutentore)</param>
+        public Operaio(string cognome, string nome, decimal pagaOraria, decimal oreLavorate, TipoOperaio tipo)
+            : base(cognome, nome, pagaOraria, oreLavorate)
+        {
+            Tipo = tipo;
+        }
+
+        /// <summary>
+        /// Calcola lo stipendio dell'operaio aggiungendo il bonus
+        /// relativo al tipo di lavoro (Installatore +185€, Manutentore +230€).
+        /// </summary>
+        /// <returns>Lo stipendio lordo incluso il bonus per il tipo di operaio</returns>
+        public override decimal CalcolaStipendio()
+        {
+            decimal stipendioBase = base.CalcolaStipendio();
+            return Tipo switch
+            {
+                TipoOperaio.Installatore => stipendioBase + 185,
+                TipoOperaio.Manutentore => stipendioBase + 230,
+                _ => stipendioBase
+            };
+        }
+
+        /// <summary>
+        /// Visualizza le informazioni dell'operaio includendo
+        /// le informazioni base e il tipo di operaio.
+        /// </summary>
+        public override void Visualizza()
+        {
+            base.Visualizza();
+            Console.WriteLine($"Categoria: Operaio");
+            Console.WriteLine($"Tipo: {Tipo}");
+            Console.WriteLine();
+        }
+    }
+}
