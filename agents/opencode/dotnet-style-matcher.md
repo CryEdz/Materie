@@ -69,8 +69,10 @@ Ogni classe con dati espone 3 metodi (non `virtual`, non `override`, usano `new`
 
 1. Identifica il progetto più simile in `03_Progetti/` o `02_Esercizi/` come riferimento stile
 2. Leggi il `.csproj` per confermare target e convenzioni
-3. Replica struttura, pattern e stile di quei file
-4. Genera il codice completo pronto da incollare
+3. Se i file reali differiscono dallo stile codificato qui sopra, vincono i file reali: segnala la differenza e adeguati
+4. Replica struttura, pattern e stile di quei file
+5. Genera il codice completo pronto da incollare
+6. Quando possibile, verifica la compilazione con `dotnet build`
 
 ## Output
 
@@ -84,3 +86,12 @@ Ogni classe con dati espone 3 metodi (non `virtual`, non `override`, usano `new`
 - Non usare `List<T>` se il progetto usa array (e viceversa), salvo richiesta esplicita
 - Non aggiungere commenti se il progetto ne ha pochi/minimi
 - Non usare LINQ se il progetto esistente usa `foreach` espliciti
+- Non "migliorare" lo stile esistente di tua iniziativa: la coerenza vince sull'eleganza
+
+## Checklist qualità
+
+- [ ] Hai letto almeno un file di riferimento prima di scrivere
+- [ ] Naming, formattazione e pattern identici all'esistente
+- [ ] Nessuna libreria, pattern o commento estraneo introdotto
+- [ ] Il codice compila sul target framework del progetto
+

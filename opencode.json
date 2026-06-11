@@ -3,7 +3,7 @@
   "model": "opencode/deepseek-v4-flash-free",
   "small_model": "opencode/deepseek-v4-flash-free",
   "default_agent": "virtual-brain",
-  "instructions": ["agents/AGENTS.md", "agents/AGENTS_PROMPTS.md"],
+  "instructions": ["agents/AGENTS.md", "agents/AGENTS_PROMPTS.md", "agents/AGENTS_TPGROUP.md"],
 
   "agent": {
     "virtual-brain": {
@@ -40,7 +40,16 @@
           "project-work-mentor": "allow",
           "refactoring-tool": "allow",
           "security-scanner": "allow",
-          "unit-tester": "allow"
+          "unit-tester": "allow",
+          "tp-architect": "allow",
+          "tp-network-engineer": "allow",
+          "tp-security-compliance": "allow",
+          "tp-hpc-engineer": "allow",
+          "tp-pondus-dev": "allow",
+          "tp-cloud-strategist": "allow",
+          "tp-backup-dr": "allow",
+          "tp-offerta-docs": "allow",
+          "tp-project-manager": "allow"
         },
         "websearch": "allow",
         "webfetch": "allow"
@@ -137,6 +146,78 @@
     "unit-tester": {
       "model": "opencode/north-mini-code-free",
       "hidden": true
+    },
+
+    "tp-virtual-brain": {
+      "description": "Orchestratore TP Group: coordina 9 subagent specializzati per progetto infrastruttura IT TP Group (fusione Thema + Pro Studio)",
+      "model": "opencode/deepseek-v4-flash-free",
+      "mode": "primary",
+      "color": "#06b6d4",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "task": {
+          "tp-architect": "allow",
+          "tp-network-engineer": "allow",
+          "tp-security-compliance": "allow",
+          "tp-hpc-engineer": "allow",
+          "tp-pondus-dev": "allow",
+          "tp-cloud-strategist": "allow",
+          "tp-backup-dr": "allow",
+          "tp-offerta-docs": "allow",
+          "tp-project-manager": "allow"
+        },
+        "websearch": "allow",
+        "webfetch": "allow"
+      }
+    },
+    "tp-architect": {
+      "description": "Architetto infrastrutturale TP Group: progetta architettura IT convergente, integrazione datacenter, piano migrazione",
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "tp-network-engineer": {
+      "description": "Ingegnere rete TP Group: progetta VPN LAN to LAN, Client to LAN, Hybrid cloud, ridondanza connettività, Fortigate",
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "tp-security-compliance": {
+      "description": "Security compliance TP Group: ISO 27001, crittografia, disaster recovery, business continuity, accessi VPN",
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "tp-hpc-engineer": {
+      "description": "Ingegnere HPC TP Group: cluster calcolo, Infiniband, Linux, nodi HPC per simulazioni strutturali",
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "tp-pondus-dev": {
+      "description": "Sviluppatore Pondus TP Group: app C#/.NET, MS SQL, IIS, potenziamento e distribuzione",
+      "model": "opencode/north-mini-code-free",
+      "hidden": true
+    },
+    "tp-cloud-strategist": {
+      "description": "Cloud strategist TP Group: strategia cloud ibrida, GCP, Google Workspace, migrazione servizi",
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "tp-backup-dr": {
+      "description": "Backup & DR TP Group: NAS QNAP, SAN NetApp, delocalizzazione, RPO/RTO, 3-2-1 rule",
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "tp-offerta-docs": {
+      "description": "Documentazione offerta TP Group: redazione offerta tecnico/economica, Gantt, RASCI",
+      "model": "opencode/mimo-v2.5-free",
+      "hidden": true
+    },
+    "tp-project-manager": {
+      "description": "Project manager TP Group: WBS, Gantt, budget, risk register, RASCI, milestone",
+      "model": "opencode/mimo-v2.5-free",
+      "hidden": true
     }
   },
 
@@ -165,6 +246,52 @@
       "description": "Propone refactoring con piano di migrazione",
       "prompt": "Analizza il codice e proponi un piano di refactoring. Includi: motivazioni, design target, piano di migrazione incrementale, rischi di regressione, stima effort. Dai priorità ai cambiamenti.",
       "template": "Analizza il codice e proponi un piano di refactoring. Includi: motivazioni, design target, piano di migrazione incrementale, rischi di regressione, stima effort. Dai priorità ai cambiamenti."
+    },
+
+    "tp:assess": {
+      "description": "Avvia assessment infrastrutturale TP Group via tp-architect",
+      "prompt": "Esegui un assessment dell'infrastruttura IT di TP Group basato sul documento di progetto. Analizza lo stato attuale (Thema on-prem + Pro Studio cloud) e identifica gap, rischi e priorità di integrazione.",
+      "template": "Esegui un assessment dell'infrastruttura IT di TP Group basato sul documento di progetto. Analizza lo stato attuale (Thema on-prem + Pro Studio cloud) e identifica gap, rischi e priorità di integrazione."
+    },
+    "tp:plan": {
+      "description": "Genera piano esecutivo TP Group via tp-project-manager",
+      "prompt": "Genera un piano esecutivo completo per il progetto TP Group. Includi: WBS, Gantt timeline, budget, rischi, milestone e matrice RASCI.",
+      "template": "Genera un piano esecutivo completo per il progetto TP Group. Includi: WBS, Gantt timeline, budget, rischi, milestone e matrice RASCI."
+    },
+    "tp:offer": {
+      "description": "Prepara bozza offerta tecnico/economica TP Group via tp-offerta-docs",
+      "prompt": "Prepara la bozza del documento di offerta tecnico/economica per il progetto TP Group seguendo i requisiti del capitolato. Includi: presentazione team, descrizione HW, attività, quotazione economica.",
+      "template": "Prepara la bozza del documento di offerta tecnico/economica per il progetto TP Group seguendo i requisiti del capitolato. Includi: presentazione team, descrizione HW, attività, quotazione economica."
+    },
+    "tp:security": {
+      "description": "Piano sicurezza ISO 27001 TP Group via tp-security-compliance",
+      "prompt": "Genera il piano di adeguamento ISO 27001 per TP Group. Includi: gap analysis, policy sicurezza, procedure DR, matrice crittografia, checklist audit.",
+      "template": "Genera il piano di adeguamento ISO 27001 per TP Group. Includi: gap analysis, policy sicurezza, procedure DR, matrice crittografia, checklist audit."
+    },
+    "tp:hpc": {
+      "description": "Specifica cluster HPC TP Group via tp-hpc-engineer",
+      "prompt": "Genera la specifica tecnica completa per il cluster HPC di TP Group (nodi esistenti + 8 nuovi). Includi: configurazione Infiniband, specifiche nodi, budget, piano espansione.",
+      "template": "Genera la specifica tecnica completa per il cluster HPC di TP Group (nodi esistenti + 8 nuovi). Includi: configurazione Infiniband, specifiche nodi, budget, piano espansione."
+    },
+    "tp:pondus": {
+      "description": "Piano potenziamento Pondus TP Group via tp-pondus-dev",
+      "prompt": "Genera il piano di potenziamento per l'applicazione Pondus (C#/MS SQL/IIS). Includi: architettura, schema DB, API, piano deployment, specifiche HW.",
+      "template": "Genera il piano di potenziamento per l'applicazione Pondus (C#/MS SQL/IIS). Includi: architettura, schema DB, API, piano deployment, specifiche HW."
+    },
+    "tp:network": {
+      "description": "Progetta rete TP Group via tp-network-engineer",
+      "prompt": "Progetta l'infrastruttura di rete convergente per TP Group. Includi: topologia, subnetting, VPN (LAN to LAN, Client to LAN, Hybrid cloud), ridondanza, configurazione Fortigate.",
+      "template": "Progetta l'infrastruttura di rete convergente per TP Group. Includi: topologia, subnetting, VPN (LAN to LAN, Client to LAN, Hybrid cloud), ridondanza, configurazione Fortigate."
+    },
+    "tp:cloud": {
+      "description": "Strategia cloud TP Group via tp-cloud-strategist",
+      "prompt": "Definisci la strategia cloud ibrida per TP Group. Includi: integrazione GCP/Workspace, hybrid cloud, piano migrazione, stima costi.",
+      "template": "Definisci la strategia cloud ibrida per TP Group. Includi: integrazione GCP/Workspace, hybrid cloud, piano migrazione, stima costi."
+    },
+    "tp:backup": {
+      "description": "Piano backup e DR TP Group via tp-backup-dr",
+      "prompt": "Progetta la soluzione di backup e disaster recovery per TP Group. Includi: architettura 3-2-1, RPO/RTO, delocalizzazione, procedure restore, stima costi.",
+      "template": "Progetta la soluzione di backup e disaster recovery per TP Group. Includi: architettura 3-2-1, RPO/RTO, delocalizzazione, procedure restore, stima costi."
     }
   }
 }

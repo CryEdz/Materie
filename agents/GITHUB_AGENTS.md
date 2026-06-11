@@ -44,6 +44,12 @@ Uso consigliato:
 - API REST e debugging backend
 - endpoint, codici HTTP e test
 
+## DotNet Style Matcher
+Uso consigliato:
+- nuovo codice C# coerente con lo stile del progetto 11_Programmazione_DotNet_CSharp
+- estensioni di esercizi e progetti esistenti
+- refactoring conservativo senza cambiare convenzioni
+
 ## IoT Edge Lab
 Uso consigliato:
 - architetture device to cloud
