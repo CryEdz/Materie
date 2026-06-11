@@ -1,11 +1,14 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4-flash-free",
+  "small_model": "opencode/deepseek-v4-flash-free",
   "default_agent": "virtual-brain",
   "instructions": ["AGENTS.md", "AGENTS_PROMPTS.md"],
 
   "agent": {
     "virtual-brain": {
-      "description": "Virtual Brain orchestrator: analizza, pianifica, coordina subagent, progetta architetture",
+      "description": "Virtual Brain orchestrator nativo: analizza, pianifica, coordina 23 subagent in parallelo, progetta architetture",
+      "model": "opencode/deepseek-v4-flash-free",
       "mode": "primary",
       "color": "#8b5cf6",
       "permission": {
@@ -14,23 +17,11 @@
         "read": "allow",
         "glob": "allow",
         "grep": "allow",
-        "task": "allow",
-        "websearch": "allow",
-        "webfetch": "allow"
-      }
-    },
-
-    "task-orchestrator": {
-      "description": "Orchestrator che coordina 22 subagent specializzati in parallelo per task complessi",
-      "mode": "subagent",
-      "color": "#6366f1",
-      "permission": {
-        "edit": "allow",
-        "bash": "allow",
         "task": {
           "cloud-lab-tutor": "allow",
           "code-analyzer": "allow",
           "code-generator": "allow",
+          "code-reviewer": "allow",
           "coding-coach-its": "allow",
           "data-analytics-coach": "allow",
           "database-sql-coach": "allow",
@@ -50,8 +41,102 @@
           "refactoring-tool": "allow",
           "security-scanner": "allow",
           "unit-tester": "allow"
-        }
+        },
+        "websearch": "allow",
+        "webfetch": "allow"
       }
+    },
+    "cloud-lab-tutor": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "code-analyzer": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "code-generator": {
+      "model": "opencode/north-mini-code-free",
+      "hidden": true
+    },
+    "code-reviewer": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "coding-coach-its": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "data-analytics-coach": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "database-sql-coach": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "debug-helper": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "dependency-auditor": {
+      "model": "opencode/north-mini-code-free",
+      "hidden": true
+    },
+    "docs-writer": {
+      "model": "opencode/mimo-v2.5-free",
+      "hidden": true
+    },
+    "dotnet-api-tutor": {
+      "model": "opencode/big-pickle",
+      "hidden": true
+    },
+    "dotnet-style-matcher": {
+      "model": "opencode/north-mini-code-free",
+      "hidden": true
+    },
+    "english-tech-mentor": {
+      "model": "opencode/mimo-v2.5-free",
+      "hidden": true
+    },
+    "exam-prep-its": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "explore": {
+      "model": "opencode/north-mini-code-free",
+      "hidden": true
+    },
+    "iot-edge-lab": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "linux-sysadmin-lab": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "network-security-trainer": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "performance-optimizer": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "project-work-mentor": {
+      "model": "opencode/mimo-v2.5-free",
+      "hidden": true
+    },
+    "refactoring-tool": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "hidden": true
+    },
+    "security-scanner": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "hidden": true
+    },
+    "unit-tester": {
+      "model": "opencode/north-mini-code-free",
+      "hidden": true
     }
   },
 

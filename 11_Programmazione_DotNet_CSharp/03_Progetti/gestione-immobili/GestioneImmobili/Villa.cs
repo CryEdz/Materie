@@ -8,21 +8,21 @@ namespace GestioneImmobili
     {
         public int DimensioneGiardino { get; set; }
 
-        public string FormatLineare()
+        public override string FormatLineare()
         {
             return base.FormatLineare() +
                 $", Giardino = {DimensioneGiardino} mq"
                 ;
         }
 
-        public string FormatDettaglio()
+        public override string FormatDettaglio()
         {
             return base.FormatDettaglio() +
                 $"\nGiardino: {DimensioneGiardino} mq"
                 ;
         }
 
-        public string FormatCSV()
+        public override string FormatCSV()
         {
             return $"{base.FormatCSV()};{DimensioneGiardino}";
         }

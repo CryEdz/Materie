@@ -17,7 +17,7 @@ namespace GestioneImmobili
 
         //metodi
 
-        public string FormatLineare()
+        public virtual string FormatLineare()
         {
             return $"" +
                 $"Codice = {Codice}" +
@@ -29,7 +29,7 @@ namespace GestioneImmobili
                 ;
         }
 
-        public string FormatDettaglio()
+        public virtual string FormatDettaglio()
         {
             return $"Codice: {Codice}" +
                 $"\nIndirizzo: {Indirizzo}" +
@@ -40,7 +40,7 @@ namespace GestioneImmobili
                 ;
         }
 
-        public string FormatCSV()
+        public virtual string FormatCSV()
         {
             return $"{Codice};{Indirizzo};{Cap};{Citta};{Superficie};{Prezzo}";
         }

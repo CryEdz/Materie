@@ -8,21 +8,21 @@ namespace GestioneImmobili
     {
         public int NumeroPostiAuto { get; set; }
 
-        public string FormatLineare()
+        public override string FormatLineare()
         {
             return base.FormatLineare() +
                 $", Posti auto = {NumeroPostiAuto}"
                 ;
         }
 
-        public string FormatDettaglio()
+        public override string FormatDettaglio()
         {
             return base.FormatDettaglio() +
                 $"\nPosti auto: {NumeroPostiAuto}"
                 ;
         }
 
-        public string FormatCSV()
+        public override string FormatCSV()
         {
             return $"{base.FormatCSV()};{NumeroPostiAuto}";
         }

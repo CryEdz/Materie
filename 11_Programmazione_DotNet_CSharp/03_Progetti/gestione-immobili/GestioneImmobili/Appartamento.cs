@@ -9,7 +9,7 @@ namespace GestioneImmobili
         public int NumeroVani { get; set; }
         public int NumeroBagni { get; set; }
 
-        public string FormatLineare()
+        public override string FormatLineare()
         {
             return base.FormatLineare() +
                 $", Vani = {NumeroVani}" +
@@ -17,7 +17,7 @@ namespace GestioneImmobili
                 ;
         }
 
-        public string FormatDettaglio()
+        public override string FormatDettaglio()
         {
             return base.FormatDettaglio() +
                 $"\nVani: {NumeroVani}" +
@@ -25,7 +25,7 @@ namespace GestioneImmobili
                 ;
         }
 
-        public string FormatCSV()
+        public override string FormatCSV()
         {
             return $"{base.FormatCSV()};{NumeroVani};{NumeroBagni}";
         }
