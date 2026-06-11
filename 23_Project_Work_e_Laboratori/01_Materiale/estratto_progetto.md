@@ -65,7 +65,7 @@ Nasce nel 2023 come startup ed è composta da giovani ingegneri progettisti che 
 ## Assessment
 
 | | Datacenter Thema Consulting | Pro Studio |
-|---|---|---|
+| --- | --- | --- |
 | **Sistemi di virtualizzazione** | 2 host con VMWare + 1 SAN NetApp (24 TB tot.) on premise | Nessuno |
 | **Backup** | Salvataggi on premise su NAS QNAP dedicato (32 TB tot.) | On GCP |
 | **Firewall** | 1 x Fortigate FG-60F | N/A |
@@ -78,7 +78,7 @@ Nasce nel 2023 come startup ed è composta da giovani ingegneri progettisti che 
 ## Servizi / Sistemi
 
 | Servizio / Sistema | Thema Consulting | Pro Studio |
-|---|---|---|
+| --- | --- | --- |
 | **Posta / Calendario** | Zimbra (VM Linux) | Google Workspace |
 | **Office / Produttività** | MS365 / LibreOffice | Google Workspace |
 | **Videoconferenza / IM** | MS Teams | Google Meet |
@@ -135,7 +135,7 @@ Con la fusione delle due aziende **non si intende rinnovare il contratto di loca
 ### Budget di progetto
 
 | Soluzione | Costo |
-|---|---|
+| --- | --- |
 | **On Premise/Hosting** (acquisto proprietà nodi di calcolo) | 250k € + IVA |
 | **On Cloud** (noleggio) | 220k € + IVA |
 
@@ -144,7 +144,7 @@ Con la fusione delle due aziende **non si intende rinnovare il contratto di loca
 ## Costi indicativi risorse
 
 | Ruolo | Costo |
-|---|---|
+| --- | --- |
 | Tecnico sistemista con almeno 5 anni di esperienza | € 500/giorno |
 | Project manager | € 650/giorno |
 
@@ -185,7 +185,7 @@ Si richiede da parte dell'ente proponente la redazione di un documento di offert
 Per la redazione del progetto si richiede di considerare i seguenti criteri di valutazione:
 
 | Criterio | Opzioni |
-|---|---|
+| --- | --- |
 | **Erogazione del servizio** | On premise (supporto manutentivo minimo 3 anni) / In cloud (minimo 3 anni) / Hosting co-location (contratto di hosting per minimo 3 anni) |
 | **Tipologie di server** | Fisico / Virtuale / Container |
 | **Sistema operativo** | MS Windows server / Linux server |
@@ -196,4 +196,4 @@ Per la redazione del progetto si richiede di considerare i seguenti criteri di v
 
 ---
 
-*Documento estratto dal PDF originale "CSP - BF 2025-27 - Learning by project - Progetto.pdf"*
+Documento estratto dal PDF originale "CSP - BF 2025-27 - Learning by project - Progetto.pdf"
