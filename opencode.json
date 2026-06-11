@@ -3,7 +3,7 @@
   "model": "opencode/deepseek-v4-flash-free",
   "small_model": "opencode/deepseek-v4-flash-free",
   "default_agent": "virtual-brain",
-  "instructions": ["AGENTS.md", "AGENTS_PROMPTS.md"],
+  "instructions": ["agents/AGENTS.md", "agents/AGENTS_PROMPTS.md"],
 
   "agent": {
     "virtual-brain": {
