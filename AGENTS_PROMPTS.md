@@ -91,6 +91,13 @@ Questo file contiene template pronti all'uso per invocare i subagents suggeriti 
   "Contesto: `11_Programmazione_DotNet_CSharp/<subpath>`.
   Obiettivo: rivedi controller/servizio, aggiungi endpoint REST o migliora DI.
   Richiedo: snippet C#, possibili test e comandi `dotnet` per build/run."
+- Agente: dotnet-style-matcher
+- Template:
+  "Contesto: `11_Programmazione_DotNet_CSharp/<subpath>`.
+  Obiettivo: aggiungi nuova funzionalità C# coerente con lo stile del progetto esistente.
+  File chiave: <file C# esistenti da cui copiare pattern e stile>.
+  Richiedo: codice C# completo, con namespace, classi e metodi conformi allo stile del progetto.
+  Vincoli: usa solo librerie già presenti, mantieni naming e formattazione esistenti."
 
 12_RESTful_API
 - Agente: dotnet-api-tutor / coding-coach-its

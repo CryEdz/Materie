@@ -8,7 +8,7 @@ namespace GestioneMessaggi
 {
     public class MessaggiBiz
     {
-        public List<Messaggio> Elenco { get; set; }
+        public  List<Messaggio> Elenco { get; set; }
 
         public MessaggiBiz()
         {

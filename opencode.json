@@ -1,0 +1,85 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "virtual-brain",
+  "instructions": ["AGENTS.md", "AGENTS_PROMPTS.md"],
+
+  "agent": {
+    "virtual-brain": {
+      "description": "Virtual Brain orchestrator: analizza, pianifica, coordina subagent, progetta architetture",
+      "mode": "primary",
+      "color": "#8b5cf6",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "task": "allow",
+        "websearch": "allow",
+        "webfetch": "allow"
+      }
+    },
+
+    "task-orchestrator": {
+      "description": "Orchestrator che coordina 22 subagent specializzati in parallelo per task complessi",
+      "mode": "subagent",
+      "color": "#6366f1",
+      "permission": {
+        "edit": "allow",
+        "bash": "allow",
+        "task": {
+          "cloud-lab-tutor": "allow",
+          "code-analyzer": "allow",
+          "code-generator": "allow",
+          "coding-coach-its": "allow",
+          "data-analytics-coach": "allow",
+          "database-sql-coach": "allow",
+          "debug-helper": "allow",
+          "dependency-auditor": "allow",
+          "docs-writer": "allow",
+          "dotnet-api-tutor": "allow",
+          "dotnet-style-matcher": "allow",
+          "english-tech-mentor": "allow",
+          "exam-prep-its": "allow",
+          "explore": "allow",
+          "iot-edge-lab": "allow",
+          "linux-sysadmin-lab": "allow",
+          "network-security-trainer": "allow",
+          "performance-optimizer": "allow",
+          "project-work-mentor": "allow",
+          "refactoring-tool": "allow",
+          "security-scanner": "allow",
+          "unit-tester": "allow"
+        }
+      }
+    }
+  },
+
+  "command": {
+    "analyze": {
+      "description": "Analisi approfondita di codice o architettura (delega a virtual-brain)",
+      "prompt": "Esegui un'analisi approfondita del contesto corrente. Identifica pattern, problemi, rischi e opportunità di miglioramento. Struttura in: riassunto, osservazioni dettagliate, raccomandazioni.",
+      "template": "Esegui un'analisi approfondita del contesto corrente. Identifica pattern, problemi, rischi e opportunità di miglioramento. Struttura in: riassunto, osservazioni dettagliate, raccomandazioni."
+    },
+    "plan": {
+      "description": "Genera un piano esecutivo multi-step per un task complesso",
+      "prompt": "Analizza la richiesta e produci un piano d'esecuzione dettagliato. Includi: obiettivi, task con dipendenze, tempistiche stimate, rischi, criteri di successo. Prima di iniziare, verifica la completezza delle informazioni.",
+      "template": "Analizza la richiesta e produci un piano d'esecuzione dettagliato. Includi: obiettivi, task con dipendenze, tempistiche stimate, rischi, criteri di successo. Prima di iniziare, verifica la completezza delle informazioni."
+    },
+    "review": {
+      "description": "Code review completa con checklist qualità",
+      "prompt": "Esegui una code review professionale. Verifica: correttezza, performance, sicurezza, manutenibilità, stile, test, documentazione. Usa una checklist strutturata. Segnala blocker, warning e suggerimenti.",
+      "template": "Esegui una code review professionale. Verifica: correttezza, performance, sicurezza, manutenibilità, stile, test, documentazione. Usa una checklist strutturata. Segnala blocker, warning e suggerimenti."
+    },
+    "brainstorm": {
+      "description": "Esplorazione creativa di soluzioni alternative",
+      "prompt": "Conduci una sessione di brainstorming strutturata. Elenca almeno 3 approcci diversi al problema. Per ognuno: vantaggi, svantaggi, complessità stimata. Concludi con una raccomandazione motivata.",
+      "template": "Conduci una sessione di brainstorming strutturata. Elenca almeno 3 approcci diversi al problema. Per ognuno: vantaggi, svantaggi, complessità stimata. Concludi con una raccomandazione motivata."
+    },
+    "refactor": {
+      "description": "Propone refactoring con piano di migrazione",
+      "prompt": "Analizza il codice e proponi un piano di refactoring. Includi: motivazioni, design target, piano di migrazione incrementale, rischi di regressione, stima effort. Dai priorità ai cambiamenti.",
+      "template": "Analizza il codice e proponi un piano di refactoring. Includi: motivazioni, design target, piano di migrazione incrementale, rischi di regressione, stima effort. Dai priorità ai cambiamenti."
+    }
+  }
+}

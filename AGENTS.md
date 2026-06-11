@@ -11,6 +11,7 @@ Mappa contenuto -> agente:
 | Cosa chiede l'utente | Agente da invocare |
 |---|---|
 | C#, .NET, ASP.NET, API RESTful in .NET, Entity Framework, WPF, MAUI, LINQ | `@dotnet-api-tutor` |
+| Scrittura/refactoring C# con aderenza allo stile del progetto esistente | `@dotnet-style-matcher` |
 | Programmazione generale, algoritmi, strutture dati, Python, C, C++, JavaScript, TypeScript, fondamenti ICT, Git, esercizi didattici | `@coding-coach-its` |
 | SQL, NoSQL, modellazione dati, query, indici, normalizzazione, MongoDB, Redis | `@database-sql-coach` |
 | Project work, documentazione, processi, pianificazione, soft skills, stage/portfolio, CV, SharePoint, parità, sicurezza lavoro, virtualizzazione | `@project-work-mentor` |
@@ -19,6 +20,8 @@ Mappa contenuto -> agente:
 | AWS, Azure, GCP, Docker, Kubernetes, deployment cloud, server Linux | `@cloud-lab-tutor` |
 | Analisi dati, visualizzazioni, dashboard, Python (pandas, matplotlib), Power BI, data science | `@data-analytics-coach` |
 | IoT, sensori, MQTT, telemetria, edge computing | `@iot-edge-lab` |
+| Linux server, shell scripting, servizi di rete, troubleshooting sistemistico, hardening | `@linux-sysadmin-lab` |
+| Piani di studio, simulazioni d'esame, quiz, ripasso rapido, preparazione verifiche | `@exam-prep-its` |
 | Esplorazione veloce del codice, ricerca file, lettura rapida, "trova", "dov'è", strutture del progetto | `@explore` |
 | AI, prompt engineering, intelligenza artificiale, LLM | `@coding-coach-its` |
 
@@ -45,12 +48,12 @@ Le directory servono solo per capire il contesto del progetto. Il routing effett
 - `08_Basi_di_Dati_SQL_NoSQL` -> database-sql-coach
 - `09_Programmazione_C_CPP` -> coding-coach-its
 - `10_Programmazione_Python` -> coding-coach-its
-- `11_Programmazione_DotNet_CSharp` -> dotnet-api-tutor
+- `11_Programmazione_DotNet_CSharp` -> dotnet-api-tutor / dotnet-style-matcher
 - `12_RESTful_API` -> dotnet-api-tutor / coding-coach-its
 - `13_Cloud_AWS` -> cloud-lab-tutor
 - `14_Cloud_Azure` -> cloud-lab-tutor
 - `15_Cloud_GCP` -> cloud-lab-tutor
-- `16_Linux_Server_e_Amministrazione` -> cloud-lab-tutor
+- `16_Linux_Server_e_Amministrazione` -> linux-sysadmin-lab
 - `17_Container_Docker_Kubernetes` -> cloud-lab-tutor
 - `18_Microsoft_365_SharePoint` -> project-work-mentor
 - `19_Virtualizzazione` -> project-work-mentor
