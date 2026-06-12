@@ -5,6 +5,14 @@
   "default_agent": "virtual-brain",
   "instructions": ["agents/AGENTS.md", "agents/AGENTS_PROMPTS.md", "agents/AGENTS_TPGROUP.md"],
 
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "tail_turns": 3,
+    "preserve_recent_tokens": 12000,
+    "reserved": 30000
+  },
+
   "agent": {
     "virtual-brain": {
       "description": "Virtual Brain orchestrator nativo: analizza, pianifica, coordina 23 subagent in parallelo, progetta architetture",
@@ -292,6 +300,15 @@
       "description": "Piano backup e DR TP Group via tp-backup-dr",
       "prompt": "Progetta la soluzione di backup e disaster recovery per TP Group. Includi: architettura 3-2-1, RPO/RTO, delocalizzazione, procedure restore, stima costi.",
       "template": "Progetta la soluzione di backup e disaster recovery per TP Group. Includi: architettura 3-2-1, RPO/RTO, delocalizzazione, procedure restore, stima costi."
+    },
+
+    "tokens": {
+      "description": "Mostra il consumo di token della sessione corrente",
+      "template": "Mostra all'utente il consumo token eseguendo: powershell -ExecutionPolicy Bypass -File \"tools/token-watch.ps1\" -Check. Leggi l'output e presentalo in modo chiaro. Consiglia /token-snapshot se \u00e8 vicino alla soglia."
+    },
+    "token-snapshot": {
+      "description": "Crea snapshot della sessione corrente e azzera il contatore token",
+      "template": "Esegui: powershell -ExecutionPolicy Bypass -File \"tools/token-watch.ps1\" -Auto -Threshold 130000. Comunica all'utente il risultato (file salvato, azione da compiere)."
     }
   }
 }
