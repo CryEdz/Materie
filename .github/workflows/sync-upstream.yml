@@ -18,8 +18,8 @@ jobs:
 
       - name: Configure git identity
         run: |
-          git config user.email "edoardoquerio-pixel@users.noreply.github.com"
-          git config user.name "edoardoquerio-pixel"
+          git config user.email "CryEdz@users.noreply.github.com"
+          git config user.name "CryEdz"
 
       - name: Add upstream remote
         run: |
