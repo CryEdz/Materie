@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout fork
-        uses: actions/checkout@v4
+        uses: aormsby/fork-sync-with-upstream-action@v2
+
         with:
           ref: main           # cambia se il branch principale ha un altro nome
 
