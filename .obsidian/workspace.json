@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "1171e917643223ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f6bd3371ae5463c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b5e3e84cf201a4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "17_Container_Docker_Kubernetes/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d776f61c5aeec97",
+    "type": "split",
+    "children": [
+      {
+        "id": "05a43a73fac46f5b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fcdb0ca82cf71e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "c0ab2fad3e636612",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "7befbf40410476c8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "da0e0ffcb9955e4b",
+    "type": "split",
+    "children": [
+      {
+        "id": "09be1fcfc3038fd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f166862a13d5866",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "17_Container_Docker_Kubernetes/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti a README"
+            }
+          },
+          {
+            "id": "440d478b12c2ee84",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
+            }
+          },
+          {
+            "id": "5404694a94a766ea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "b540a412cd140df8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "98a258f3b2bdffa5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "17_Container_Docker_Kubernetes/README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura di README"
+            }
+          },
+          {
+            "id": "c955370388ee4749",
+            "type": "leaf",
+            "state": {
+              "type": "opencode-terminal",
+              "state": {},
+              "icon": "terminal",
+              "title": "OpenCode"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 689.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false,
+      "opencode:OpenCode Terminal": false,
+      "opencode:OpenCode Conversations": false
+    }
+  },
+  "active": "c955370388ee4749",
+  "lastOpenFiles": [
+    "17_Container_Docker_Kubernetes/labs/28-ConfigMap/README.md",
+    "17_Container_Docker_Kubernetes/labs/28-ConfigMap/img/configmap-diagram.gif",
+    "17_Container_Docker_Kubernetes/labs/01-Fork_and_clone_this_repo/img/github_login.png",
+    "17_Container_Docker_Kubernetes/labs/01-Fork_and_clone_this_repo/img/github_home_not_logged_in.png",
+    "17_Container_Docker_Kubernetes/labs/02-Linux_installation/README.md"
+  ]
+}
