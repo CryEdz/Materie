@@ -3,22 +3,28 @@ name: Sync Fork With Upstream
 on:
   schedule:
     - cron: "*/10 * * * *"   # ogni 10 minuti
-  workflow_dispatch:         # possibilità di lanciarlo a mano
+  workflow_dispatch:
 
 jobs:
-  sync_with_upstream:
+  sync:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout fork
-        uses: aormsby/fork-sync-with-upstream-action@v2
-
+        uses: actions/checkout@v4
         with:
-          ref: main           # cambia se il branch principale ha un altro nome
+          fetch-depth: 0
+          ref: main   # cambia se il tuo branch principale ha un altro nome
 
-      - name: Sync with upstream
-        uses: aormsby/Fork-Sync-With-Upstream-action@v3
-        with:
-          upstream_repository: edoardoquerio-pixel/Materie
-          upstream_branch: main          # branch sorgente (upstream)
-          target_branch: main           # branch del tuo fork da aggiornare
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/edoardoquerio-pixel/Materie.git
+          git fetch upstream
+
+      - name: Merge upstream changes
+        run: |
+          git merge upstream/main --no-edit || true
+
+      - name: Push changes to fork
+        run: |
+          git push origin main
