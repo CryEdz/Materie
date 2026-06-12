@@ -2,7 +2,7 @@ name: Sync Fork With Upstream
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # ogni 10 minuti
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main   # cambia se il tuo branch principale ha un altro nome
+          ref: main
+
+      - name: Configure git identity
+        run: |
+          git config user.email "edoardoquerio-pixel@users.noreply.github.com"
+          git config user.name "edoardoquerio-pixel"
 
       - name: Add upstream remote
         run: |
